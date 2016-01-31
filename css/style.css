@@ -1,0 +1,24 @@
+.main-feature h2{
+    font-family: "Myriad Pro Regular", "PTSans Narrow";
+	font-weight: bold;
+	font-size: 21px;
+	color: #000000;
+	line-height: 26px;
+}
+
+.main-feature{
+    font-family: "Myriad Pro Regular", "PTSans Regular";
+	font-weight: regular;
+	font-size: 14px;
+	color: #000000;
+	line-height: 26px;
+}
+
+h1{
+    font-family: "Myriad Pro Regular", "PTSans";
+	font-weight: bold;
+	font-size: 30px;
+	color: #000000;
+	line-height: 24px;
+
+}
