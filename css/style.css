@@ -1,5 +1,5 @@
 h2{
-    font-family: "Myriad Pro Regular", "PTSans Narrow";
+    font-family: "PTSans Narrow";
 	font-weight: bold;
 	font-size: 21px;
 	color: #000000;
@@ -7,7 +7,7 @@ h2{
 }
 
 body{
-    font-family: "Myriad Pro Regular", "PTSans Regular";
+    font-family: "PTSans";
 	font-weight: regular;
 	font-size: 14px;
 	color: #000000;
@@ -15,7 +15,7 @@ body{
 }
 
 h1{
-    font-family: "Myriad Pro Regular", "PTSans";
+    font-family: "PTSans";
 	font-weight: bold;
 	font-size: 30px;
 	color: #000000;
