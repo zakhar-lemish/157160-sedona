@@ -7,7 +7,7 @@
 </head>
 <body>
 
-  <header class="main-header">
+  <header class="main-header clearfix">
     <div class="header-logo"><img src="img/header-logo.svg" width="138" height="70" alt="Седона"></div>
     <nav class="main-navigation">
       <ul class="main-menu">
@@ -17,22 +17,23 @@
         <li><a href="#">ГОСТИНИЦЫ</a></li>
       </ul>
     </nav>
-    <div class="poster">
-      <!--<img src="img/poster.jpg" width="1200" height="564" alt="Седона">-->
+    <div class="poster clearfix">
+      <img src="img/emptyposter1.jpg" width="1200" height="564" alt="Седона">
       <div class="welcome-post"><img src="img/Welcome.png" width="188" height="45" alt="Седона"></div>
       <div class="gorgeous-post"><img src="img/gorgeous.png" width="256" height="30" alt="Седона"></div>
       <div class="sedona-post"><img src="img/Sedona.gif" width="458" height="78" alt="Седона"></div>
-      <div class="because-post"><img src="img/Becauser.jpg" width="296" height="80" alt="Седона"></div>
+      <div class="because-post"><img src="img/Because.gif" width="296" height="80" alt="Седона"></div>
     </div>
   </header>
 
   <main>
+
     <div class="main-feature">
       <h2>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
       <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
     </div>
     <div class="feature-container">
-      <div class="feature-view">
+      <div class="feature-view clearfix">
         <div class="text-part">
           <h2>НАСТОЯЩИЙ<br>ГОРОДОК</h2>
           <p>-№1-</p>
@@ -40,30 +41,34 @@
         </div>
         <div class="image-part"><img src="img/cedona-photo.jpg" width="800" height="256" alt="Седона"></div>
       </div>
-      <div class="feature">
-        <img src="img/hause.svg" width="75" height="72" alt="Седона">
-        <h2>ЖИЛЬЁ</h2>
-        <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ<br>МОТЕЛЕ, ВСЁ КАК В КИНО!</p>
+
+      <div class="feature-box clearfix">
+        <div class="feature">
+          <img src="img/hause.svg" width="75" height="72" alt="Седона">
+          <h2>ЖИЛЬЁ</h2>
+          <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ<br>МОТЕЛЕ, ВСЁ КАК В КИНО!</p>
+        </div>
+        <div class="feature">
+          <img src="img/food.svg" width="74" height="70" alt="Седона">
+          <h2>ЕДА</h2>
+          <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР,<br>ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+        </div> 
+        <div class="feature">
+          <img src="img/souvenir.svg" width="64" height="76" alt="Седона">
+          <h2>СУВЕНИРЫ</h2>
+          <p>НЕ ТОЛЬКО КИТАЙСКОГО,<br>НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+        </div>
       </div>
-      <div class="feature">
-        <img src="img/food.svg" width="74" height="70" alt="Седона">
-        <h2>ЕДА</h2>
-        <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР,<br>ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
-      </div>
-      <div class="feature">
-        <img src="img/souvenir.svg" width="64" height="76" alt="Седона">
-        <h2>СУВЕНИРЫ</h2>
-        <p>НЕ ТОЛЬКО КИТАЙСКОГО,<br>НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
-      </div>
-      <div class="feature-view">
-        <div class="image-part"><img src="img/brige-photo.jpg" width="800" height="256" alt="Седона"</div>
+
+      <div class="feature-view clearfix">
+        <div class="image-part"><img src="img/brige-photo.jpg" width="800" height="256" alt="Седона"></div>
         <div class="text-part">
           <h2>ТАМ ЕСТЬ<br>МОСТ ДЬЯВОЛА</h2>
           <p>-№2-</p>
           <p>ДА ПО НЕМУ МОЖНО ПРОЙТИ!<br>ЕСЛИ КОНЧНО ВЫ ОСМЕЛИТЕСЬ</p>
         </div>
       </div>
-      <div class="number-features">
+      <div class="number-features clearfix">
         <div class="number-feature">
           <h2>НЕБОЛЬШАЯ<br>ПЛОЩАДЬ</h2>
           <p>-№3-</p>
@@ -81,7 +86,8 @@
         </div>
       </div>
     </div>
-    <div class="feature main-feature">
+
+    <div class="main-feature">
       <h1>ЗАИНТЕРЕСОВАЛИСЬ?</h1>
       <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕИЯ ГОСТИНИЦ В СЕДОНЕ</p>
     </div>
@@ -89,10 +95,10 @@
     <div class="form-configuration">
       <div> ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</div>
       <form action="#" method="post">
-        <label>ДАТА ЗАЕЗДА <input type="text" name="arrival-date"></label>
-        <label>ДАТА ВЫЕЗДА <input type="text" name="departure-date"></label>
-        <label>ВЗРОСЛЫЕ <input type="number" name="adults"></label>
-        <label>ДЕТИ <input type="number" name="children"></label>
+        <label>ДАТА ЗАЕЗДА: <input type="text" name="arrival-date" value="24 апреля 2016"></label>
+        <label>ДАТА ВЫЕЗДА: <input type="text" name="departure-date" value="4 июля 2016"></label>
+        <label>ВЗРОСЛЫЕ: <input type="number" name="adults" value="2"></label>
+        <label>ДЕТИ: <input type="number" name="children" value="0"></label>
         <input type="submit" value="НАЙТИ">
       </form>
     </div>

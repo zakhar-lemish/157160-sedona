@@ -1,12 +1,15 @@
 
 
 body{
+	width: 1200px;
+    padding: 0px;
+    margin: 0 auto;
     font-family: "PTSans", "Arial";
 	font-weight: regular;
 	font-size: 14px;
 	color: #000000;
 	line-height: 26px;
-}
+    }
 
 h1{
     font-family: "PTSans", "Arial";
@@ -14,7 +17,7 @@ h1{
 	font-size: 30px;
 	color: #000000;
 	line-height: 24px;
-}
+    }
 
 h2{
     font-family: "PTSans Narrow", "Arial";
@@ -23,3 +26,545 @@ h2{
 	color: #000000;
 	line-height: 26px;
 	}
+
+img{
+    display: block;
+    }	
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+    }
+
+.main-header{
+	width:1200px;
+	margin: 0 auto;
+	}
+
+.main-navigation{
+	min-height: 56px;
+	}
+
+.main-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+
+.main-menu li{
+	float: left;
+	width: 20%;
+    text-align: center;
+	}
+
+.main-menu li:nth-child(2){
+	margin-right: 20%;    
+    }
+
+.main-menu li a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    color:black;
+    text-decoration:none;
+    font-weight: bold;
+    text-transform:uppercase;
+    }
+
+.header-logo{
+    position: absolute;
+    width: 138 px;
+    left:50%;
+    margin-left:-57px; 
+    z-index:200;
+	}
+
+.poster{ 
+	z-index:100; 
+	}
+
+.welcome-post{
+	position: absolute;
+	right:435px;
+	top:155px;
+	z-index:200;
+	}
+
+.gorgeous-post{
+	position: absolute;
+	right:400px;
+	top:218px;
+	z-index:200;
+	}
+
+.sedona-post{
+	position: absolute;
+	right:298px;
+	top:310px;
+	z-index:200;
+	}
+
+.because-post{
+	position: absolute;
+	right:378px;
+	top:460px;
+	z-index:200;
+	}
+
+.choosing-features{
+	width: 1200px;
+	min-height: 220px;
+	margin: 0px;
+	background-image: url("../img/choose-photo.jpg");
+	display: block;
+
+}
+
+.choosing-features p{
+	display: block;
+	float: left;
+	margin:0%;
+	vertical-align: middle;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+
+.feature-column,
+.cell-slider{
+	width: 25%;
+	height: 218px;
+	display: block;
+	float:left;
+	color:white;
+	text-transform:uppercase;
+}
+
+.feature-column label{
+	width:100%;
+	display: block;
+	float: left;
+	margin: 0;
+	min-height: 20%;
+	padding-left: 63px;
+}
+
+.feature-column:nth-child(2) label{
+	padding-left: 18px;
+}
+
+.feature-column:nth-child(2) p{
+	width: 284px;
+	padding-left: 16px;
+}
+
+.feature-column input{
+    margin-right: 21px;
+}
+
+.feature-column p{
+    width: 234px;
+	min-height: 24%;
+	padding-top: 8%;
+	padding-left: 66px;
+}
+
+.cell-slider{
+	width: 50%;
+}
+
+.cell-slider p{
+    width: 405px;
+	padding-left: 195px;
+	min-height: 18%;
+	padding-top: 4%;
+}
+
+.price-controls{
+    border:2px solid white;
+    width: 314px;
+    padding: 0px;
+    margin-left: 210px;
+    margin-top: 56px;
+
+}
+
+.price-controls input{
+	border:none;
+	width: 40px;
+	margin-left: 5px;
+	font-size: 14px;
+	color: white;
+	background: none;
+}
+
+.vertical-bar{
+	border-left: 2px solid white;
+	width: 2px;
+	height: 21px;
+	float: left;
+	margin-top: 3px;
+}
+
+.price-controls label{
+	display: block;
+	float: left;
+	width: 94px;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	padding-left: 52px;
+	margin:0;
+}
+
+.range-controls{
+    width: 314px;
+    padding: 20px 0;
+    margin-left: 210px;
+}
+
+.scale{
+	height: 2px;
+	background: white;
+}
+
+.bar{
+	height: 2px;
+	background: #918381;
+	width: 252px;*/
+}
+
+.toggle{
+	position: absolute;
+	top: 162px;
+	border:8px solid white;
+	background: #ababab;
+	border-radius: 50%;
+	width: 4px;
+	height:4px;
+}
+
+.max-toggle{
+	right:107px;
+}
+
+.cell-slider input[type="submit"]{
+	border:2px solid white;
+	width: 133px;
+	height: 30px;
+	background: none;
+	color:white;
+	text-transform:uppercase; 
+	display: block;
+	float: right;
+	margin-right: 168px;
+	margin-top: 10px;
+}
+
+.search{
+	width: 100%;
+	margin: 0;
+
+}
+
+.search-bar{
+	width: 1134px;
+	min-height: 56px;
+	text-transform:uppercase;
+	padding-top: 30px;
+	padding-left: 66px;
+	margin-top: 0;
+}
+
+.search-bar h2{
+	width: 120px;
+	float:left;
+    margin:0;
+}
+
+.search-bar ul{
+    list-style: none;
+    margin: 0;
+    padding-top: 0px;
+}
+
+.search-bar li{
+	width: 100px;
+	float:left;
+	font-size: 12px;
+	text-align: right;
+}
+
+.search-bar li a{
+	color: #b1b1b1;
+	text-decoration: none;
+	border-bottom: 1px dotted #b1b1b1;
+}
+
+.rating-box{
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.features-box{
+	min-height: 150px;
+	border-top: 1px solid #e5e5e5;
+}
+
+.hotel-photo{
+	width:135px;
+	margin-left: 72px;
+	padding-top: 30px;
+	float: left;
+
+}
+
+.reserve-column{
+	width: 750px;
+	float: left;
+	padding-top: 30px;
+	margin-left: 30px;
+}
+
+.reserve-column a{
+	display: block;
+	font-size: 21px;
+	text-transform:uppercase;
+	text-decoration: none;
+    color: #000000;
+
+}
+
+.reserve-column span:nth-child(3) {
+	position: absolute;
+	left: 405px;
+}
+
+.button{
+	display: inline-block;
+	min-width: 0;
+	padding: 6px 16px;
+	color: white;
+	text-transform:uppercase;
+	font-weight: bold;
+}
+
+.button a{
+	color: white;
+	text-decoration: none;
+}
+
+.feature-button{
+	background-color: #81b3d2;
+}
+
+.reserve-button{
+	background-color: #766357;
+	margin-left: 4px;
+}
+
+.right-column{
+	width: 110px;
+	float: right;
+	min-height: 120px;
+	margin-right: 72px;
+}
+
+.stars{
+	margin-top: 30px;
+}
+
+.rating{
+	background-color: #f2f2f2;
+	padding: 7px 15px;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-top: 24px;
+    color:#797979;
+}
+
+.main-feature{
+	width: 575px;
+    padding: 10px 43px;
+    margin: 0 auto;
+    margin-top: 49px;
+	}
+
+.text-part{
+	width: 400px;
+	display: block;
+	float: left;
+	}
+.text-part p,
+.text-part h2{
+    width: 300px;
+    margin: 0 auto;
+	}
+
+.feature-container{
+	padding-top:48px;
+	display: block;
+	}
+
+.image-part{
+	  width: 800px;
+	  display: block;
+	  float: left;
+	  margin: 0;
+	}
+
+.feature-view{
+	background-color:#81b3d2;
+	display: block;
+	margin:0px;
+	}
+
+.feature{
+	width: 400px;
+	display: block;
+	float: left;
+	}
+
+.feature-box{
+    margin-bottom: 90px;
+	margin-top: 47;
+	}
+
+.feature:nth-child(1){
+	padding-top: 14px;
+	}
+
+.feature:nth-child(2){
+	padding-top: 16px;
+	}
+
+.feature:nth-child(3){
+	padding-top: 10px;
+	}
+
+.number-features{
+	background-color: #eeeeee;
+    padding-bottom: 64px;
+	padding-top: 50px;
+	margin-bottom: 47px;
+	}
+
+.number-feature{
+	width: 400px;
+	display: block;
+	float: left;
+	}
+
+.form-phone{
+    margin-top: 130px;
+       
+	}
+
+.form-configuration{
+	width: 568px;
+    min-height: 480px;
+    position:absolute;
+    top:2290px;
+    left: 317px;
+    background-color:#ffffff
+	}
+	
+.form-configuration div{
+    min-height: 84px;
+	width: 568px;
+	background-color: #766357;
+	}
+
+.form-configuration input[type="submit"]{
+    width: 460px;
+    min-height: 56px;
+    background-color:#81b3d2;
+    margin: 0 auto;
+    margin-left: 55px;
+    border:none;
+    margin-bottom: 52px
+	}
+
+label{
+	margin-left: 55px;
+	}
+
+.form-configuration input[type="text"],
+.form-configuration input[type="number"]{
+	background-color: #f2f2f2;
+	border:none;
+	margin-bottom: 27px;
+	padding: 14px;
+	}
+
+.form-configuration input[type="text"]{
+    width: 315px;
+	margin-left: 20px;
+	}
+
+input[ name="arrival-date"]{
+	margin-left: 23px;
+	margin-top: 52px;
+	}
+
+.form-configuration input[type="number"]{
+	width: 76px;
+	margin-left: 40px;
+	margin-bottom: 52px
+	}
+
+input[name="children"]{
+	margin-left: 26px;
+	}
+
+.container{
+    min-height: 120px;
+	width: 1200px;
+	display: block;
+	position: absolute;
+	top:2848px;
+	background-color: rgba(251, 249, 239, 0.9);
+	}
+
+	.catalog-cont{
+		top:817px;	
+		background:none;
+    }
+
+.footer-contacts {
+    float: left;
+    width: 320px;
+    margin-right: 60px;
+    margin-left: 133px;
+    margin-top: 47px;
+    }
+
+.footer-contacts a{
+	color:#000000;
+	font-size: 21px;
+	font-weight: bold;
+	text-decoration: none;
+}  
+
+.footer-social {
+    float: left;
+    width: 180px;
+    }
+
+.footer-logo {
+    float: right;
+    width: 220px;
+    margin-right: 90px;
+    margin-top: 35px;
+}
+
+.footer-logo p,
+.footer-logo a{
+	display: block;
+	margin: 5px;
+	float: left;
+
+}
+
+.footer-logo p{
+	margin-top: 10px;
+}

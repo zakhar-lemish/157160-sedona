@@ -19,61 +19,76 @@
   </header>
 
   <main>
-    <header class="choosing-features">
+
+    <header class="choosing-features clearfix">
+      <!--<img src="img/choose-photo.jpg" width="1200" height="220" alt="Седона">-->
       <form action="#" method="post">
         <div class="feature-column">
-          <span>инфраструктура:</span>
-          <label for="pool-id">бассейн</label>
+          <p>инфраструктура:</p>
+          <label><input type="checkbox" name="pool" id="pool-id" checked>бассейн</label>
+          <label><input type="checkbox" name="parking" id="parking-id">парковка</label>
+          <label><input type="checkbox" name="wi-fi" id="wi-fi-id">wi-fi</label>
+
+
+         <!-- <label for="pool-id">бассейн</label>
           <input type="checkbox" name="pool" id="pool-id" checked>
           <label for="parking-id">парковка</label>
           <input type="checkbox" name="parking" id="parking-id">
           <label for="wi-fi-id">wi-fi</label>
-          <input type="checkbox" name="wi-fi" id="wi-fi-id">
+          <input type="checkbox" name="wi-fi" id="wi-fi-id">-->
         </div>
         <div class="feature-column">
-          <span>тип жилья:</span>
-          <label for="hotel-id">гостиница</label>
+          <p>тип жилья:</p>
+          <label><input type="checkbox" name="hotel" id="hotel-id" checked>гостиница</label>
+          <label><input type="checkbox" name="motel" id="motel-id" checked>мотель</label>
+          <label><input type="checkbox" name="appartaments" id="appartaments-id" checked>аппартаменты</label>
+
+
+          <!--<label for="hotel-id">гостиница</label>
           <input type="checkbox" name="hotel" id="hotel-id" checked>
           <label for="motel-id">мотель</label>
           <input type="checkbox" name="motel" id="motel-id" checked>
           <label for="appartaments-id">аппартаменты</label>
-          <input type="checkbox" name="appartaments" id="appartaments-id" checked>
+          <input type="checkbox" name="appartaments" id="appartaments-id" checked>-->
         </div>
         <div class="cell-slider">
-          <div class="price-controls">
-            от
-            <input class="min-price" type="text" value="0">
+          <p>стоимость в сутки (р)</p>
+          <div class="price-controls clearfix">
+            <label>от<input class="min-price" type="text" value="0"></label>
             <div class="vertical-bar"></div>
-            до 
-            <input class="max-price" type="text" value="3000">
+            <label>до<input class="max-price" type="text" value="3000"></label>
           </div>
-          <div class="scale">
-            <div class="bar"></div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle min-toggle"></div>
+            <div class="toggle max-toggle"></div>
           </div>
-          <div class="toggle min-toggle"></div>
-          <div class="toggle max-toggle"></div>
           <input type="submit" value="показать">
         </div>
       </form>
+
     </header>
+
     <div class="search">
       <div class="search-bar">
         <h2>найдено:3</h2>
-        <div class="bread-crumbs">
+        <!--<div class="">-->
           <ul>
             <li>сортировка:</li>
             <li><a href="#">по цене</a></li>
             <li><a href="#">по типу</a></li>
             <li><a href="#">по рейтингу</a></li>
           </ul>
-        </div>
+        <!--</div>-->
         <div class="columns">
           <div class="column-top"><a href="#"></a></div>
           <div class="column-bottom"><a href="#"></a></div>
         </div>
       </div>
       <div class="rating-box">
-        <div class="features-box">
+        <div class="features-box clearfix">
           <div class="hotel-photo"><img src="img/amara resort.jpg" width="135" height="90" alt="Седона"></div>
           <div class="reserve-column">
             <a href="#" class="hotel">amara resort & spa</a>
@@ -89,10 +104,11 @@
             </div>
           </div>
           <div class="right-column">
+            <div class="stars"> stars </div>
             <div class="rating">рейтинг:8,5</div>
           </div>
         </div>
-        <div class="features-box">
+        <div class="features-box clearfix">
           <div class="hotel-photo"><img src="img/desert quail.jpg" width="135" height="90" alt="Седона"></div>
           <div class="reserve-column">
             <a href="#" class="hotel">desert quail inn</a>
@@ -108,10 +124,11 @@
             </div>
           </div>
           <div class="right-column">
+            <div class="stars"> stars </div>
             <div class="rating">рейтинг:8,9</div>
           </div>
         </div>
-        <div class="features-box">
+        <div class="features-box clearfix">
           <div class="hotel-photo"><img src="img/villas.jpg" width="135" height="90" alt="Седона"></div>
           <div class="reserve-column">
             <a href="#" class="hotel">villas at poco diablo</a>
@@ -127,6 +144,7 @@
             </div>
           </div>
           <div class="right-column">
+            <div class="stars"> stars </div>
             <div class="rating">рейтинг:9,2</div>
           </div>
         </div>
@@ -135,7 +153,7 @@
   </main>
 
   <footer>
-    <div class="container">
+    <div class="container catalog-cont">
         <section class="footer-contacts">
           <a href="#">#VISITSEDONA</a>
         </section>
