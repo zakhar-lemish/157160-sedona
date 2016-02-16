@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Седона</title>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -24,15 +26,27 @@
       <form action="#" method="post">
         <div class="feature-column">
           <p>инфраструктура:</p>
-          <label><input type="checkbox" name="pool" id="pool-id" checked>бассейн</label>
+          <!--<label><input type="checkbox" name="pool" id="pool-id" checked>бассейн</label>
           <label><input type="checkbox" name="parking" id="parking-id">парковка</label>
-          <label><input type="checkbox" name="wi-fi" id="wi-fi-id">wi-fi</label>
+          <label><input type="checkbox" name="wi-fi" id="wi-fi-id">wi-fi</label>-->
+          <input type="checkbox" name="pool" id="pool-id" checked>
+          <label for="pool-id">бассейн</label>
+          <input type="checkbox" name="parking" id="parking-id">
+          <label for="parking-id">парковка</label>
+          <input type="checkbox" name="wi-fi" id="wi-fi-id">
+          <label for="wi-fi-id">wi-fi</label>
         </div>
         <div class="feature-column">
           <p>тип жилья:</p>
-          <label><input type="checkbox" name="hotel" id="hotel-id" checked>гостиница</label>
+          <!--<label><input type="checkbox" name="hotel" id="hotel-id" checked>гостиница</label>
           <label><input type="checkbox" name="motel" id="motel-id" checked>мотель</label>
-          <label><input type="checkbox" name="appartaments" id="appartaments-id" checked>аппартаменты</label>
+          <label><input type="checkbox" name="appartaments" id="appartaments-id" checked>аппартаменты</label>-->
+          <input type="checkbox" name="hotel" id="hotel-id" checked>
+          <label for="hotel-id">гостиница</label>
+          <input type="checkbox" name="motel" id="motel-id" checked>
+          <label for="motel-id">мотель</label>
+          <input type="checkbox" name="appartaments" id="appartaments-id" checked>
+          <label for="appartaments-id">аппартаменты</label>
         </div>
         <div class="cell-slider">
           <p>стоимость в сутки (р)</p>
@@ -64,8 +78,8 @@
             <li><a href="#">по рейтингу</a></li>
           </ul>
         <div class="columns">
-          <div class="column-top"><a href="#"></a></div>
-          <div class="column-bottom"><a href="#"></a></div>
+          <div class="column column-top"><a class="icon-up-dir" href="#"></a></div>
+          <div class="column column-bottom"><a class="icon-down-dir" href="#"></a></div>
         </div>
       </div>
       <div class="rating-box">
@@ -81,7 +95,12 @@
             </div>
           </div>
           <div class="right-column">
-            <div class="stars"> stars </div>
+            <div class="stars">
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+            </div>
             <div class="rating">рейтинг:8,5</div>
           </div>
         </div>
@@ -97,7 +116,10 @@
             </div>
           </div>
           <div class="right-column">
-            <div class="stars"> stars </div>
+            <div class="stars">
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+            </div>
             <div class="rating">рейтинг:8,9</div>
           </div>
         </div>
@@ -113,7 +135,11 @@
             </div>
           </div>
           <div class="right-column">
-            <div class="stars"> stars </div>
+            <div class="stars">
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+            </div>
             <div class="rating">рейтинг:9,2</div>
           </div>
         </div>
@@ -121,19 +147,19 @@
     </div>
   </main>
 
-  <footer class="main-footer">
+  <footer class="main-footer clearfix">
     <div class="container catalog-cont">
         <section class="footer-contacts">
-          <a href="#">#VISITSEDONA</a>
+          <span>#VISITSEDONA</span>
         </section>
         <section class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Твиттер</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a class="social-btn social-btn-tv" href="#"><span class="icon-twitter"></span></a>
+          <a class="social-btn social-btn-fb" href="#"><span class="icon-facebook"></span></a>
+          <a class="social-btn social-btn-yt" href="#"><span class="icon-youtube"></a>
         </section>
         <section class="footer-logo">
           <p>WEBSITE BY</p>
-          <a class="btn" href="https://htmlacademy.ru"><img src="img/footer-logo.gif" width="113" height="39" alt="Седона"></a>
+          <a class="btn" href="https://htmlacademy.ru"><span class="sprite"></span></a>
         </section>
     </div>
   </footer>

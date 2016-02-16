@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Седона</title>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -92,30 +94,48 @@
     </div>
     <div class="form-phone"><img src="img/map.jpg" width="1200" height="593" alt="Седона"></div>
     <div class="form-configuration">
-      <div> ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</div>
+      <div class="hotel-search"> ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</div>
       <form action="#" method="post">
-        <label>ДАТА ЗАЕЗДА: <input type="text" name="arrival-date" value="24 апреля 2016"></label>
-        <label>ДАТА ВЫЕЗДА: <input type="text" name="departure-date" value="4 июля 2016"></label>
-        <label>ВЗРОСЛЫЕ: <input type="number" name="adults" value="2"></label>
-        <label>ДЕТИ: <input type="number" name="children" value="0"></label>
+        <label>ДАТА ЗАЕЗДА: 
+          <input type="text" name="arrival-date" value="24 апреля 2016">
+          <span class="icon-calendar"></span>
+        </label>
+        <label>ДАТА ВЫЕЗДА: 
+          <input type="text" name="departure-date" value="4 июля 2016">
+          <span class="icon-calendar">
+        </label>
+        <!--<label>ВЗРОСЛЫЕ: <input type="number" name="adults" value="2"></label>
+        <label>ДЕТИ: <input type="number" name="children" value="0"></label>-->
+        <label for="adults-id">ВЗРОСЛЫЕ:</label>
+        <div class="clients-number">
+          <button><span class="icon-minus"></span></button>
+          <input type="text" name="adults" id="adults-id" value="2">
+          <button><span class="icon-plus"></span></button>
+        </div>
+        <label for="children-id">ДЕТИ:</label>
+        <div class="clients-number">
+          <button><span class="icon-minus"></span></button>
+          <input type="text" name="children" id="children-id" value="0">
+          <button><span class="icon-plus"></span></button>
+        </div>
         <input type="submit" value="НАЙТИ">
       </form>
     </div>
   </main>
 
-  <footer class="main-footer">
+  <footer class="main-footer clearfix">
     <div class="container">
         <section class="footer-contacts">
-          <a href="#">#VISITSEDONA</a>
+          <span>#VISITSEDONA</span>
         </section>
         <section class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Твиттер</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a class="social-btn social-btn-tv" href="#"><span class="icon-twitter"></span></a>
+          <a class="social-btn social-btn-fb" href="#"><span class="icon-facebook"></span></a>
+          <a class="social-btn social-btn-yt" href="#"><span class="icon-youtube"></a>
         </section>
         <section class="footer-logo">
           <p>WEBSITE BY</p>
-          <a class="btn" href="https://htmlacademy.ru"><img src="img/footer-logo.gif" width="113" height="39" alt="Седона"></a>
+          <a class="btn" href="https://htmlacademy.ru"><!--<img src="img/footer-logo.gif" width="113" height="39" alt="Седона"><--><span class="sprite"></span></a>
         </section>
     </div>
   </footer>
