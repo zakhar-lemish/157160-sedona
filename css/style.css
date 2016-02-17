@@ -5,7 +5,7 @@ body{
 	padding: 0px;
 	margin: 0 auto;
 	font-family: "PTSans", "Arial",sans-serif;
-	font-weight: regular;
+	/*font-weight: regular;*/
 	font-size: 14px;
 	color: #000000;
 	line-height: 26px;
@@ -350,19 +350,25 @@ input[type=checkbox]:checked + label:before{
 	width: 120px;
 	float:left;
 	margin:0;
+	margin-right: 50px;
+
 }
 
 .search-bar ul{
 	list-style: none;
 	margin: 0;
 	padding-top: 0px;
+
 }
 
 .search-bar li{
-	width: 100px;
+	/*width: 90px;*/
 	float:left;
 	font-size: 12px;
 	text-align: right;
+
+	position: relative;
+	margin-right: 25px;
 }
 
 .search-bar li a{
@@ -381,6 +387,13 @@ input[type=checkbox]:checked + label:before{
 	border-bottom:none;
 }
 
+.search-bar li .disabled,
+.search-bar li .disabled:hover,
+.search-bar li .disabled:active{
+	color: #81b3d2;
+	border:none;
+
+}
 .columns{
 	float: right;
 	margin-right: 68px;
@@ -769,8 +782,8 @@ input[name="children"]{
 	background-color: rgba(251, 249, 239, 0.9);
 }
 
-	.catalog-cont{
-		position: relative;
+.catalog-cont{
+	position: relative;
 	top:0px;	
 	background:none;
 }
