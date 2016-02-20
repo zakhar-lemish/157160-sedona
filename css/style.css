@@ -71,6 +71,8 @@ h2{
 
 img{
 	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 .clearfix::after{
@@ -120,7 +122,7 @@ img{
 
 .header-logo{
 	position: absolute;
-	width: 138 px;
+	width: 138px;
 	left:50%;
 	margin-left:-69px; 
 	z-index:200;
@@ -198,7 +200,7 @@ img{
 	margin-right: 21px;
 }
 
- input[type=checkbox] {
+input[type=checkbox] {
 	display: none;
 }
 
@@ -209,18 +211,34 @@ input[type=checkbox] + label:before{
 	font-size: 26px;
 	position: relative;
 	top:5px;
+
+	display: inline-block;
+  width: 1em;
+ /* margin-right: 0.2em;
+  margin-left: 0.2em;*/
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-sedona";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+
+  speak: none;
 }
 
-input[type=checkbox] + label:before:disabled{
+/*input[type=checkbox] + label:before:disabled{
 	background-color: #6a6a6a;
 
-}
+}*/
 
 input[type=checkbox]:checked + label:before{
 	content: "\2611";
-	margin-right: 20px;
+	/*margin-right: 20px;
 	font-weight: bold;
-	font-size: 26px;
+	font-size: 26px;*/
 }
 
 .feature-column p{
@@ -278,6 +296,8 @@ input[type=checkbox]:checked + label:before{
 }
 
 .range-controls{
+position: relative;
+
 	width: 314px;
 	padding: 20px 0;
 	margin-left: 210px;
@@ -296,7 +316,8 @@ input[type=checkbox]:checked + label:before{
 
 .toggle{
 	position: absolute;
-	top: 162px;
+	/*top: 162px;*/
+	top: 11px;
 	border:8px solid white;
 	background: #ababab;
 	border-radius: 50%;
@@ -310,7 +331,8 @@ input[type=checkbox]:checked + label:before{
 }
 
 .max-toggle{
-	right:207px;
+	/*right:207px;*/
+	right:50px;
 }
 
 .cell-slider input[type="submit"]{
@@ -362,11 +384,9 @@ input[type=checkbox]:checked + label:before{
 }
 
 .search-bar li{
-	/*width: 90px;*/
 	float:left;
 	font-size: 12px;
 	text-align: right;
-
 	position: relative;
 	margin-right: 25px;
 }
@@ -618,17 +638,20 @@ input[type=checkbox]:checked + label:before{
 	margin-top: 130px;
 }
 
-.form-configuration{
+/*.form-configuration{
 	width: 568px;
 	min-height: 480px;
 	position:absolute;
 	top:2222px;
-	left: 392px;
 	background-color:#ffffff;
 	color: #000000;
 	font-weight: bold;
 	padding: 0;
+
+	left:50%;
+	margin-left: -284px;
 }
+
 	
 .form-configuration .hotel-search{
 	min-height: 54px;
@@ -642,10 +665,13 @@ input[type=checkbox]:checked + label:before{
 	font-size: 21px;
 }
 
-.form-configuration form{
+/*.form-configuration form{
 	min-height: 400px;
 	box-shadow: 0 5px 10px 5px #ededed;
-}
+	
+	/*padding:55px;
+	position: relative;*/
+/*}
 
 .form-configuration input[type="submit"]{
 	width: 464px;
@@ -671,9 +697,16 @@ input[type=checkbox]:checked + label:before{
 
 label{
 	margin-left: 55px;
-}
+}*
 
-.form-configuration input[type="text"],
+/*.form-configuration label{
+	
+	margin-bottom: 27px;
+	padding: 14px 0;
+	width: 110px;
+
+}*/
+/*.form-configuration input[type="text"],
 .form-configuration input[type="number"]{
 	background-color: #f2f2f2;
 	border:none;
@@ -683,10 +716,26 @@ label{
 	cursor: pointer;
 }
 
-.form-configuration input[type="text"]{
+/*.form-configuration input[type="text"]{
+	background-color: #f2f2f2;
+	border:none;
+	margin-bottom: 27px;
+	padding: 14px;
+	font-weight: bold;
+	cursor: pointer;
+
+	display: block;
+}*/
+
+/*.form-configuration input[type="text"]{
 	width: 315px;
 	margin-left: 20px;
-}
+	/*display: inline-block;
+
+	width: 300px;*/
+
+
+/*}
 
 .form-configuration input[type="text"]:hover{
 	background-color: #ebebeb;
@@ -733,6 +782,7 @@ label{
 .clients-number button{
 	color: #a9a9a9;
 	cursor: pointer;
+
 }
 
 .clients-number input[type="text"]{
@@ -771,7 +821,178 @@ input[ name="arrival-date"]{
 
 input[name="children"]{
 	margin-left: 26px;
+}*/
+
+
+.modal-content {
+	width: 458px;
+	min-height: 100px;
+	height: 270px;
+	background-color:#ffffff;
+	color: #000000;
+	font-weight: bold;
+	padding: 55px;
+	position:absolute;
+	top:2307px;
+	left:50%;
+	margin-left: -284px;
+	box-shadow: 0 5px 10px 5px #ededed;
 }
+
+.modal-content-close {
+	min-height: 84px;
+	width: 568px;
+	background-color: #766357;
+	text-align: center;
+	vertical-align: middle;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 21px;
+ 	cursor: pointer;
+	position: absolute;
+	top: -84px;
+	right: 0;
+	border:none;
+}
+
+.modal-content input[type="text"]{
+	min-width: 65%;
+	display: block;
+	float: right;
+	background-color: #f2f2f2;
+	border: none;
+	min-height: 37px;
+	padding-left: 13px;
+	margin: 0;
+	font-weight: bold;
+	text-transform:uppercase;
+}
+
+.modal-content input[type="text"]:hover{
+	background-color: #ebebeb;
+}
+
+.modal-content input[type="text"]:focus{
+	background-color: #ffffff;
+	border: 1px solid #e5e5e5;
+	padding-left: 12px;
+	min-height: 35px;
+	min-width: 64.7%;
+}
+
+.modal-content label{
+	position: relative;
+	top:7px;
+	border: none;
+}
+
+.label-container{
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.icon-calendar{
+	line-height: 0;
+	display: block;
+	position: absolute;
+	right: 10px;
+	top:10px;
+	color:#c2c2c2;
+	cursor:pointer;
+}
+
+.icon-calendar:hover,
+.clients-number button:hover{
+	color:#111111;
+}
+
+.icon-calendar:active,
+.clients-number button:active{
+	color:#81b3d2;
+}
+
+.number-box{
+
+	margin-bottom: 55px;
+	width: 50%;
+	float:left;	
+}
+
+.clients-number{
+	float: right;
+	min-width: 20%;
+	width: 46%;
+}
+
+.clients-number button{
+	float: right;
+	background-color:#f2f2f2;
+	border: none;
+	min-height: 37px;
+	font-weight: bold;
+	text-transform:uppercase;
+	width: 27%;
+	text-align: center;
+	padding: 0;
+	color:#c2c2c2;
+}
+
+ .number-box input[type="text"]{
+	min-width: 0px;
+	width: 30px;
+	width: 24%;
+	text-align: center;
+	padding:0;
+
+}
+
+.number-box label{
+	width: 54%;
+}
+
+form .number-box:nth-child(4){
+	float: right;
+}
+
+form .number-box:nth-child(4) label{
+	margin-right: 30px;
+	padding-left:19%;
+}
+
+.modal-content input[type="submit"]{
+	width: 100%;
+	min-height: 56px;
+	background-color:#81b3d2;
+	margin: 0 auto;
+	border:none;
+	margin-bottom: 52px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 21px;
+	padding: 0;
+}
+
+.modal-content input[type="submit"]:hover{
+	background-color: #669ec0;
+}
+
+.modal-content input[type="submit"]:active{
+	background-color: #5496bd;
+	color: #88b6d1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .container{
 	min-height: 120px;
@@ -831,19 +1052,19 @@ input[name="children"]{
 }
 
 .sprite {
-    background-image: url(../img/sprite/spritesedona.png);
-    background-repeat: no-repeat;
-    display: block;
+	background-image: url("../img/sprite/spritesedona.png");
+	background-repeat: no-repeat;
+	display: block;
 
-    width: 113px;
-    height: 39px;
-    background-position: -10px -10px;
+	width: 113px;
+	height: 39px;
+	background-position: -10px -10px;
 }
 
 .sprite:hover{
-	 width: 113px;
-    height: 39px;
-    background-position: -10px -69px;
+	width: 113px;
+	height: 39px;
+	background-position: -10px -69px;
 }
 
 .sprite:active{
@@ -862,7 +1083,8 @@ input[name="children"]{
 	vertical-align: middle;
 	text-decoration: none;
 
-	background: #81b3d2 url("img/sprite.png") no-repeat center;
+	/*background: #81b3d2 url("img/sprite.png") no-repeat center;*/
+	background: #81b3d2;
 }
 
 .social-btn:hover{

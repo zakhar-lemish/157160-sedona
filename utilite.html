@@ -1,0 +1,50 @@
+      <!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+  <title>HTML Academy: Седона</title>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="css/styleutilite.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="modal-content">
+      <button class="modal-content-close" type="button" title="ПОИСК ГОСТИНИЦЫ В СЕДОНЕ">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+
+   
+      <form action="#" method="post">
+       <div class="label-container clearfix"> 
+        <label for="arrival-id">ДАТА ЗАЕЗДА:</label>
+          <input type="text" name="arrival-date" id="arrival-id" value="24 апреля 2016">
+          <span class="icon-calendar"></span>
+       </div>
+
+       <div class="label-container clearfix"> 
+        <label for="departure-id">ДАТА ВЫЕЗДА:</label>
+          <input type="text" name="departure-date" id="departure-id" value="4 июля 2016">
+          <span class="icon-calendar"></span>
+       </div>
+
+
+        <div class="number-box clearfix">
+        <label for="adults-id">ВЗРОСЛЫЕ:</label>
+        <div class="clients-number">
+          <button><span class="icon-minus"></span></button>
+          <input type="text" name="adults" id="adults-id" value="2">
+          <button><span class="icon-plus"></span></button>
+        </div>
+        </div>
+
+        <div class="number-box clearfix">
+        <label for="children-id">ДЕТИ:</label>
+        <div class="clients-number">
+          <button><span class="icon-minus"></span></button>
+          <input type="text" name="children" id="children-id" value="0">
+          <button><span class="icon-plus"></span></button>
+        </div>
+        </div>
+        <input type="submit" value="НАЙТИ">
+      </form>
+    </div>
+      </body>
+</html>

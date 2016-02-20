@@ -10,7 +10,7 @@
 <body>
 
   <header class="main-header clearfix">
-    <div class="header-logo"><img src="img/header-logo.svg" width="138" height="70" alt="Седона"></div>
+    <div class="header-logo"><img src="img/header-logo.png" width="138" height="70" alt="Седона"></div>
     <nav class="main-navigation">
       <ul class="main-menu">
         <li><a href="#">Информация</a></li>
@@ -44,17 +44,17 @@
 
       <div class="feature-box clearfix">
         <div class="feature">
-          <img src="img/hause.svg" width="75" height="72" alt="Седона">
+          <img src="img/hause.png" width="75" height="72" alt="Седона">
           <h2>ЖИЛЬЁ</h2>
           <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ<br>МОТЕЛЕ, ВСЁ КАК В КИНО!</p>
         </div>
         <div class="feature">
-          <img src="img/food.svg" width="74" height="70" alt="Седона">
+          <img src="img/food.png" width="74" height="70" alt="Седона">
           <h2>ЕДА</h2>
           <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР,<br>ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
         </div> 
         <div class="feature">
-          <img src="img/souvenir.svg" width="64" height="76" alt="Седона">
+          <img src="img/souvenir.png" width="64" height="76" alt="Седона">
           <h2>СУВЕНИРЫ</h2>
           <p>НЕ ТОЛЬКО КИТАЙСКОГО,<br>НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
         </div>
@@ -93,34 +93,78 @@
       <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕИЯ ГОСТИНИЦ В СЕДОНЕ</p>
     </div>
     <div class="form-phone"><img src="img/map.jpg" width="1200" height="593" alt="Седона"></div>
-    <div class="form-configuration">
+    <!--<div class="form-configuration">
       <div class="hotel-search"> ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</div>
-      <form action="#" method="post">
-        <label>ДАТА ЗАЕЗДА: 
-          <input type="text" name="arrival-date" value="24 апреля 2016">
-          <span class="icon-calendar"></span>
-        </label>
-        <label>ДАТА ВЫЕЗДА: 
-          <input type="text" name="departure-date" value="4 июля 2016">
-          <span class="icon-calendar">
-        </label>
+      <div class="form">
+        <form action="#" method="post">
+          <label>ДАТА ЗАЕЗДА: 
+            <input type="text" name="arrival-date" value="24 апреля 2016">
+            <span class="icon-calendar"></span>
+          </label>
+          <label>ДАТА ВЫЕЗДА: 
+            <input type="text" name="departure-date" value="4 июля 2016">
+            <span class="icon-calendar"></span>
+          </label>
         <!--<label>ВЗРОСЛЫЕ: <input type="number" name="adults" value="2"></label>
         <label>ДЕТИ: <input type="number" name="children" value="0"></label>-->
-        <label for="adults-id">ВЗРОСЛЫЕ:</label>
-        <div class="clients-number">
-          <button><span class="icon-minus"></span></button>
-          <input type="text" name="adults" id="adults-id" value="2">
-          <button><span class="icon-plus"></span></button>
+          <!--<label for="adults-id">ВЗРОСЛЫЕ:</label>
+          <div class="clients-number">
+            <button><span class="icon-minus"></span></button>
+            <input type="text" name="adults" id="adults-id" value="2">
+            <button><span class="icon-plus"></span></button>
+          </div>
+          <label for="children-id">ДЕТИ:</label>
+          <div class="clients-number">
+            <button><span class="icon-minus"></span></button>
+            <input type="text" name="children" id="children-id" value="0">
+            <button><span class="icon-plus"></span></button>
+          </div>
+          <input type="submit" value="НАЙТИ">
+        </form>
+      </div>
+    </div>-->
+    
+
+   <div class="modal-content">
+      <button class="modal-content-close" type="button" title="ПОИСК ГОСТИНИЦЫ В СЕДОНЕ">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+
+      <form action="#" method="post">
+        <div class="label-container clearfix"> 
+          <label for="arrival-id">ДАТА ЗАЕЗДА:</label>
+          <input type="text" name="arrival-date" id="arrival-id" value="24 апреля 2016">
+          <span class="icon-calendar"></span>
         </div>
-        <label for="children-id">ДЕТИ:</label>
-        <div class="clients-number">
-          <button><span class="icon-minus"></span></button>
-          <input type="text" name="children" id="children-id" value="0">
-          <button><span class="icon-plus"></span></button>
+
+        <div class="label-container clearfix"> 
+          <label for="departure-id">ДАТА ВЫЕЗДА:</label>
+          <input type="text" name="departure-date" id="departure-id" value="4 июля 2016">
+          <span class="icon-calendar"></span>
         </div>
+
+
+        <div class="number-box clearfix">
+          <label for="adults-id">ВЗРОСЛЫЕ:</label>
+          <div class="clients-number">
+            <button><span class="icon-minus"></span></button>
+            <input type="text" name="adults" id="adults-id" value="2">
+            <button><span class="icon-plus"></span></button>
+          </div>
+        </div>
+
+        <div class="number-box clearfix">
+          <label for="children-id">ДЕТИ:</label>
+          <div class="clients-number">
+            <button><span class="icon-minus"></span></button>
+            <input type="text" name="children" id="children-id" value="0">
+            <button><span class="icon-plus"></span></button>
+          </div>
+        </div>
+
         <input type="submit" value="НАЙТИ">
       </form>
     </div>
+
+
   </main>
 
   <footer class="main-footer clearfix">
@@ -131,7 +175,7 @@
         <section class="footer-social">
           <a class="social-btn social-btn-tv" href="#"><span class="icon-twitter"></span></a>
           <a class="social-btn social-btn-fb" href="#"><span class="icon-facebook"></span></a>
-          <a class="social-btn social-btn-yt" href="#"><span class="icon-youtube"></a>
+          <a class="social-btn social-btn-yt" href="#"><span class="icon-youtube"></span></a>
         </section>
         <section class="footer-logo">
           <p>WEBSITE BY</p>
