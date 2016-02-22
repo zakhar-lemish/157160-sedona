@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link href="css/style.css" rel="stylesheet">
 </head>
+<!--<img class="check1" src="img/check2.jpg" width="1200" height="933" alt="Седона">-->
 <body>
   <header class="main-header">
     <div class="header-logo"><a href="#"><img src="img/header-logo.png" width="138" height="70" alt="Седона"></a></div>
@@ -23,43 +24,44 @@
   <main>
 
     <header class="choosing-features clearfix">
-      <form action="#" method="post">
-        <div class="feature-column clearfix">
-          <p>инфраструктура:</p>
-          <input type="checkbox" name="pool" id="pool-id" checked>
-          <label for="pool-id">бассейн</label>
-          <input type="checkbox" name="parking" id="parking-id">
-          <label for="parking-id">парковка</label>
-          <input type="checkbox" name="wi-fi" id="wi-fi-id">
-          <label for="wi-fi-id">wi-fi</label>
-        </div>
-        <div class="feature-column clearfix">
-          <p>тип жилья:</p>
-          <input type="checkbox" name="hotel" id="hotel-id" checked>
-          <label for="hotel-id">гостиница</label>
-          <input type="checkbox" name="motel" id="motel-id" checked>
-          <label for="motel-id">мотель</label>
-          <input type="checkbox" name="appartaments" id="appartaments-id" checked>
-          <label for="appartaments-id">аппартаменты</label>
-        </div>
-        <div class="cell-slider">
-          <p>стоимость в сутки (р)</p>
-          <div class="price-controls clearfix">
-            <label>от<input class="min-price" type="text" value="0"></label>
-            <div class="vertical-bar"></div>
-            <label>до<input class="max-price" type="text" value="3000"></label>
+      <div class="wrapper">
+        <form action="#" method="post">
+          <div class="feature-column clearfix">
+            <p>инфраструктура:</p>
+            <input type="checkbox" name="pool" id="pool-id" checked>
+            <label for="pool-id">бассейн</label>
+            <input type="checkbox" name="parking" id="parking-id">
+            <label for="parking-id">парковка</label>
+            <input type="checkbox" name="wi-fi" id="wi-fi-id">
+            <label for="wi-fi-id">wi-fi</label>
           </div>
-          <div class="range-controls">
-            <div class="scale">
-              <div class="bar"></div>
+          <div class="feature-column clearfix">
+            <p>тип жилья:</p>
+            <input type="checkbox" name="hotel" id="hotel-id" checked>
+            <label for="hotel-id">гостиница</label>
+            <input type="checkbox" name="motel" id="motel-id" checked>
+            <label for="motel-id">мотель</label>
+            <input type="checkbox" name="appartaments" id="appartaments-id" checked>
+            <label for="appartaments-id">аппартаменты</label>
+          </div>
+          <div class="cell-slider">
+            <p>стоимость в сутки (р)</p>
+            <div class="price-controls clearfix">
+              <label>от<input class="min-price" type="text" value="0"></label>
+              <div class="vertical-bar"></div>
+              <label>до<input class="max-price" type="text" value="3000"></label>
             </div>
-            <div class="toggle min-toggle"></div>
-            <div class="toggle max-toggle"></div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle min-toggle"></div>
+              <div class="toggle max-toggle"></div>
+            </div>
+            <input type="submit" value="показать">
           </div>
-          <input type="submit" value="показать">
-        </div>
-      </form>
-
+        </form>
+      </div>
     </header>
 
     <div class="search">
