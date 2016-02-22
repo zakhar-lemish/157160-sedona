@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="main-header">
-    <div class="header-logo"><img src="img/header-logo.png" width="138" height="70" alt="Седона"></div>
+    <div class="header-logo"><a href="#"><img src="img/header-logo.png" width="138" height="70" alt="Седона"></a></div>
     <nav class="main-navigation">
       <ul class="main-menu">
         <li><a href="#">Информация</a></li>
@@ -24,33 +24,17 @@
 
     <header class="choosing-features clearfix">
       <form action="#" method="post">
-        <div class="feature-column">
+        <div class="feature-column clearfix">
           <p>инфраструктура:</p>
-          <!--<label><input type="checkbox" name="pool" id="pool-id" checked>бассейн</label>
-          <label><input type="checkbox" name="parking" id="parking-id">парковка</label>
-          <label><input type="checkbox" name="wi-fi" id="wi-fi-id">wi-fi</label>-->
-
-          <!--<ul class="form-checkbox">
-            <li>-->
-            <input type="checkbox" name="pool" id="pool-id" checked>
-            <label for="pool-id">бассейн</label>
-            <!--</li> 
-            <li>-->
-            <input type="checkbox" name="parking" id="parking-id">
-            <label for="parking-id">парковка</label>
-           <!-- </li>
-            <li>-->
-            <input type="checkbox" name="wi-fi" id="wi-fi-id">
-            <label for="wi-fi-id">wi-fi</label>
-            <!--</li>
-          </ul>-->
-
+          <input type="checkbox" name="pool" id="pool-id" checked>
+          <label for="pool-id">бассейн</label>
+          <input type="checkbox" name="parking" id="parking-id">
+          <label for="parking-id">парковка</label>
+          <input type="checkbox" name="wi-fi" id="wi-fi-id">
+          <label for="wi-fi-id">wi-fi</label>
         </div>
-        <div class="feature-column">
+        <div class="feature-column clearfix">
           <p>тип жилья:</p>
-          <!--<label><input type="checkbox" name="hotel" id="hotel-id" checked>гостиница</label>
-          <label><input type="checkbox" name="motel" id="motel-id" checked>мотель</label>
-          <label><input type="checkbox" name="appartaments" id="appartaments-id" checked>аппартаменты</label>-->
           <input type="checkbox" name="hotel" id="hotel-id" checked>
           <label for="hotel-id">гостиница</label>
           <input type="checkbox" name="motel" id="motel-id" checked>
@@ -88,7 +72,6 @@
             <li><a href="#">по рейтингу</a></li>
           </ul>
         <div class="columns">
-          <!--<div class="column column-top"><a class="icon-up-dir" href="#"><span class="icon-up-dir"></span></a></div>-->
           <div class="column column-top"><a href="#"><span class="icon-up-dir"></span></a></div>
           <div class="column column-bottom"><a href="#"><span class="icon-down-dir"></span></a></div>
         </div>
@@ -101,8 +84,8 @@
             <span>гостиница</span>
             <span>от 3500 р.</span>
             <div class="reserve-block">
-                <a class="button feature-button" href="#">подробнее</a>
-                <a class="button reserve-button" href="#">забронировать</a>
+              <a class="button feature-button" href="#">подробнее</a>
+              <a class="button reserve-button" href="#">забронировать</a>
             </div>
           </div>
           <div class="right-column">

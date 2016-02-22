@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <title>HTML Academy: Седона</title>
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-
+<!--<img class="check1" src="img/check1.jpg" width="1200" height="2762" alt="Седона">-->
   <header class="main-header clearfix">
     <div class="header-logo"><img src="img/header-logo.png" width="138" height="70" alt="Седона"></div>
     <nav class="main-navigation">
@@ -23,11 +24,10 @@
       <div class="welgorg-post"><img src="img/Welcome-gorg.png" width="256" height="86" alt="Седона"></div>
       <div class="sedona-post"><img src="img/Sedona.gif" width="458" height="78" alt="Седона"></div>
       <div class="because-post"><img src="img/Because.gif" width="296" height="80" alt="Седона"></div>
+      <div class="tryangle-layer"><img  src="img/tryangle-layer.png" width="1200" height="57" alt="Седона"></div>
     </div>
   </header>
-
   <main>
-
     <div class="main-feature">
       <h2>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
       <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
@@ -41,7 +41,6 @@
         </div>
         <div class="image-part"><img src="img/cedona-photo.jpg" width="800" height="256" alt="Седона"></div>
       </div>
-
       <div class="feature-box clearfix">
         <div class="feature">
           <img src="img/hause.png" width="75" height="72" alt="Седона">
@@ -59,7 +58,6 @@
           <p>НЕ ТОЛЬКО КИТАЙСКОГО,<br>НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
         </div>
       </div>
-
       <div class="feature-view clearfix">
         <div class="image-part"><img src="img/brige-photo.jpg" width="800" height="256" alt="Седона"></div>
         <div class="text-part">
@@ -67,8 +65,7 @@
           <p>-№2-</p>
           <p>ДА ПО НЕМУ МОЖНО ПРОЙТИ!<br>ЕСЛИ КОНЧНО ВЫ ОСМЕЛИТЕСЬ</p>
         </div>
-      </div>
-      
+      </div>      
       <div class="number-features clearfix">
         <div class="number-feature">
           <h2>НЕБОЛЬШАЯ<br>ПЛОЩАДЬ</h2>
@@ -87,86 +84,44 @@
         </div>
       </div>
     </div>
-
     <div class="main-feature">
       <h1>ЗАИНТЕРЕСОВАЛИСЬ?</h1>
       <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕИЯ ГОСТИНИЦ В СЕДОНЕ</p>
     </div>
     <div class="form-phone"><img src="img/map.jpg" width="1200" height="593" alt="Седона"></div>
-    <!--<div class="form-configuration">
-      <div class="hotel-search"> ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</div>
-      <div class="form">
-        <form action="#" method="post">
-          <label>ДАТА ЗАЕЗДА: 
-            <input type="text" name="arrival-date" value="24 апреля 2016">
-            <span class="icon-calendar"></span>
-          </label>
-          <label>ДАТА ВЫЕЗДА: 
-            <input type="text" name="departure-date" value="4 июля 2016">
-            <span class="icon-calendar"></span>
-          </label>
-        <!--<label>ВЗРОСЛЫЕ: <input type="number" name="adults" value="2"></label>
-        <label>ДЕТИ: <input type="number" name="children" value="0"></label>-->
-          <!--<label for="adults-id">ВЗРОСЛЫЕ:</label>
-          <div class="clients-number">
-            <button><span class="icon-minus"></span></button>
-            <input type="text" name="adults" id="adults-id" value="2">
-            <button><span class="icon-plus"></span></button>
-          </div>
-          <label for="children-id">ДЕТИ:</label>
-          <div class="clients-number">
-            <button><span class="icon-minus"></span></button>
-            <input type="text" name="children" id="children-id" value="0">
-            <button><span class="icon-plus"></span></button>
-          </div>
-          <input type="submit" value="НАЙТИ">
-        </form>
-      </div>
-    </div>-->
-    
-
-   <div class="modal-content">
+    <div class="modal-content">
       <button class="modal-content-close" type="button" title="ПОИСК ГОСТИНИЦЫ В СЕДОНЕ">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-
       <form action="#" method="post">
         <div class="label-container clearfix"> 
           <label for="arrival-id">ДАТА ЗАЕЗДА:</label>
           <input type="text" name="arrival-date" id="arrival-id" value="24 апреля 2016">
           <span class="icon-calendar"></span>
         </div>
-
         <div class="label-container clearfix"> 
           <label for="departure-id">ДАТА ВЫЕЗДА:</label>
           <input type="text" name="departure-date" id="departure-id" value="4 июля 2016">
           <span class="icon-calendar"></span>
         </div>
-
-
         <div class="number-box clearfix">
           <label for="adults-id">ВЗРОСЛЫЕ:</label>
           <div class="clients-number">
-            <button><span class="icon-minus"></span></button>
-            <input type="text" name="adults" id="adults-id" value="2">
             <button><span class="icon-plus"></span></button>
+            <input type="text" name="adults" id="adults-id" value="2">
+            <button><span class="icon-minus"></span></button>
           </div>
         </div>
-
         <div class="number-box clearfix">
           <label for="children-id">ДЕТИ:</label>
           <div class="clients-number">
-            <button><span class="icon-minus"></span></button>
-            <input type="text" name="children" id="children-id" value="0">
             <button><span class="icon-plus"></span></button>
+            <input type="text" name="children" id="children-id" value="0">
+            <button><span class="icon-minus"></span></button>
           </div>
         </div>
-
         <input type="submit" value="НАЙТИ">
       </form>
     </div>
-
-
   </main>
-
   <footer class="main-footer clearfix">
     <div class="container">
         <section class="footer-contacts">
@@ -182,7 +137,6 @@
           <a class="btn" href="https://htmlacademy.ru"><span class="sprite"></span></a>
         </section>
     </div>
-  </footer>
-   
+  </footer>  
 </body>
 </html>
